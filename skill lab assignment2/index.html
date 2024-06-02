@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .carousel-item img {
+            max-height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .card img {
+            height: 600px;
+            object-fit: cover;
+        }
+        
+        .modal-header,
+        .modal-footer {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bookstore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://th.bing.com/th/id/OIP.udlndgkWICXlL9uHfs8EwQAAAA?rs=1&pid=ImgDetMain">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Featured book 1</h5>
+                    <p>Description of the first featured book.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/OIP.pVLNxTSGD6pmz395RR5HTgHaDQ?w=722&h=318&rs=1&pid=ImgDetMain">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Featured book 2</h5>
+                    <p>Description of the second featured book.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/OIP.mfj9g7QNtNKNJQ6J_0yoqAHaDq?rs=1&pid=ImgDetMain">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Featured book 3</h5>
+                    <p>Description of the third featured book.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Book Cards -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Books</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="book1.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">FOUR NOVELS</h5>
+                        <p class="card-text">Author:CHARLES DICKENS</p>
+                        <p class="card-text">$18.99</p>
+                        <p class="card-text">Brief description of the book.</p>
+                        <p>Oliver Twist. Pip. The ghosts of Christmas past, present, and future. The characters of Charles Dickens live on in our imaginations long after we’ve read his renowned works of social commentary and vivid storytelling. Although these novels were written more than a hundred years ago, no home library today would be complete without them. This Canterbury Classics edition collects some of Dickens’s most famous and beloved works—The Adventures of Oliver Twist, A Christmas Carol, A Tale of Two Cities, and Great Expectations—in an elegant, leather-bound, keepsake edition. For those who’ve never read Dickens, it’s the perfect opportunity to experience his unique and compelling writing. And for those who are already Dickens devotees, an introduction by a renowned scholar will provide additional context and food for thought.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="book2.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">ONE PERFECT COUPLE</h5>
+                        <p class="card-text">Author:RUTH WARE</p>
+                        <p class="card-text">$16.99</p>
+                        <p class="card-text">Brief description of the book.</p>
+                        <p>Lyla Santiago has spent months working on a research project that could be the key to getting a permanent job in her field.
+                            So, she can’t really drop everything to go to a desert island with her actor boyfriend Nico to film One Perfect Couple, a new reality TV show that Nico is sure will lead to his big break – can she?
+                            
+                            Two weeks later, Lyla finds herself boarding a boat to an isolated luxury resort in the Indian Ocean.
+                            
+                            The rules of the game are simple. Ten strangers have to survive together on the island - and the last couple standing scoops the prize.
+                            There will be sun, sea, laughs and plenty of flirting.
+                            What could possibly go wrong?
+                            
+                            But when a huge tropical storm cuts them off from everything, the group must band together.
+                            As tensions run high and fresh water runs low, Lyla realises that someone is playing this game for real – and they'll stop at nothing to win.
+                            
+                            Ten might have arrived, but who will survive to the end?</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="book3.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">BEDTIME STORY</h5>
+                        <p class="card-text">Author: Author 3</p>
+                        <p class="card-text">$12.99</p>
+                        <p class="card-text">Brief description of the book.</p>
+                        <p>Snuggle Up For Six Adorable Tales Featuring The Disney Princesses! This Sweet Collection Of Stories Is Perfect For Bedtime, Story Time Or Any Time At All! With Stories Starring Rapunzel, Snow White, Jasmine And More Beloved Disney Princesses, This Treasury Is Certain To Become Your Little One's Favourite Bedtime Treat!</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Book Details Modal -->
+    <div class="modal fade" id="bookDetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Book Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="book1.jpg" class="img-fluid" alt="Book 1">
+                        </div>
+                        <div class="col-md-8">
+                            <h5>Book Title 1</h5>
+                            <p>Author: Author 1</p>
+                            <p>Price: $19.99</p>
+                            <p>Detailed description of the book.</p>
+                            <button class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Modal -->
+    <div class="modal fade" id="contactFormModal" tabindex="-1" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactFormModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>Follow us on:</p>
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <p class="mt-3 mb-0">© 2024 Bookstore. All rights reserved.</p>
+            <a href="#" class="text-white mr-3">Privacy Policy</a>
+            <a href="#" class="text-white">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
